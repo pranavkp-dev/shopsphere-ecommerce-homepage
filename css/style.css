@@ -1,0 +1,370 @@
+html{
+scroll-behavior:smooth;
+}
+
+
+body{
+font-family:'Inter',sans-serif;
+font-weight:400;
+color:#111;
+}
+
+.logo{
+font-size:1.8rem;
+font-weight:700;
+}
+
+.hero{
+padding:100px 0;
+}
+
+.hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:5rem;
+font-weight:600;
+line-height:1;
+letter-spacing:-1px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.1rem;
+color:#666;
+margin-bottom:30px;
+}
+
+.hero-img{
+height:600px;
+width:100%;
+object-fit:cover;
+}
+
+.section-title h2{
+font-family:'Inter',sans-serif;
+font-size:2.2rem;
+font-weight:400;
+letter-spacing:-1px;
+}
+
+.category-card{
+background:#f8f8f8;
+padding:60px;
+text-align:center;
+border-radius:20px;
+transition:.3s;
+cursor:pointer;
+}
+
+.category-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+.category-card:hover{
+transform:translateY(-8px);
+}
+
+@media(max-width:768px){
+
+.hero{
+padding:120px 0;
+background:
+linear-gradient(
+135deg,
+#fafafa,
+#f2f2f2
+);
+}
+
+.hero h1{
+font-size:2.6rem;
+}
+
+.hero-img{
+height:350px;
+margin-top:30px;
+}
+
+}
+
+
+.product-card{
+background:#fff;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.3s;
+position:relative;
+}
+
+.product-card img{
+height:250px;
+width:100%;
+object-fit:cover;
+}
+
+.product-card:hover{
+transform:translateY(-10px);
+}
+
+.price{
+font-size:1.2rem;
+font-weight:600;
+}
+
+.flash-sale{
+padding:100px;
+background:#111;
+color:white;
+}
+
+.sale-tag{
+display:inline-block;
+padding:12px 28px;
+font-size:.9rem;
+font-weight:600;
+letter-spacing:2px;
+text-transform:uppercase;
+border-radius:50px;
+background:#fff;
+color:#111;
+margin-bottom:25px;
+}
+
+.countdown{
+font-size:2.5rem;
+font-weight:bold;
+}
+
+.testimonial-section{
+padding:80px 0;
+background:#f9f9f9;
+}
+
+.testimonial-card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.review-img{
+width:60px;
+height:60px;
+border-radius:50%;
+margin-bottom:15px;
+}
+
+.newsletter{
+padding:100px 0;
+}
+
+.newsletter-form{
+max-width:600px;
+margin:auto;
+display:flex;
+gap:10px;
+}
+
+footer{
+background:#111;
+color:white;
+padding:60px 0 20px;
+}
+
+.footer-links{
+list-style:none;
+padding:0;
+}
+
+.footer-links a{
+color:white;
+text-decoration:none;
+}
+
+.navbar{
+backdrop-filter: blur(10px);
+background: rgba(255,255,255,.9);
+box-shadow: 0 2px 20px rgba(0,0,0,.05);
+}
+
+.navbar-brand{
+font-family:'Cormorant Garamond',serif;
+font-size:2.2rem;
+font-weight:700;
+}
+
+.nav-link{
+font-family:'Inter',sans-serif;
+font-size:.95rem;
+font-weight:500;
+}
+
+.btn{
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+#topBtn{
+position:fixed;
+bottom:20px;
+right:20px;
+width:50px;
+height:50px;
+border:none;
+border-radius:50%;
+background:#111;
+color:white;
+font-size:20px;
+cursor:pointer;
+display:none;
+z-index:999;
+}
+
+.product-badge{
+position:absolute;
+top:15px;
+left:15px;
+background:black;
+color:white;
+padding:6px 12px;
+border-radius:20px;
+font-size:.8rem;
+}
+
+.stats-section{
+padding:80px 0;
+background:#111;
+color:white;
+}
+
+.stats-section h2{
+font-size:3rem;
+font-weight:700;
+}
+
+@media(max-width:768px){
+
+.newsletter-form{
+flex-direction:column;
+}
+
+.countdown{
+font-size:1.5rem;
+}
+
+.stats-section h2{
+font-size:2rem;
+}
+
+}
+
+.brand-slider{
+    overflow:hidden;
+    width:100%;
+    padding:40px 0;
+    background:#fff;
+}
+
+.brand-track{
+    display:flex;
+    width:max-content;
+    gap:60px;
+    animation:scrollBrands 40s linear infinite;
+}
+
+.brand-track span{
+    font-size:1.8rem;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:#222;
+    opacity:.8;
+    transition:.3s;
+}
+
+.brand-track span{
+font-family:'Inter',sans-serif;
+font-size:1.2rem;
+font-weight:700;
+letter-spacing:2px;
+text-transform:uppercase;
+color:#333;
+}
+
+.brand-track span:hover{
+    opacity:1;
+    transform:scale(1.1);
+}
+@keyframes scrollBrands{
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+}
+
+.product-card h5{
+font-family:'Inter',sans-serif;
+font-size:1rem;
+font-weight:600;
+}
+
+.price{
+font-size:1.4rem;
+font-weight:700;
+}
+.testimonial-card h6{
+font-family:'Inter',sans-serif;
+font-weight:700;
+}
+
+.testimonial-card p{
+font-size:.95rem;
+line-height:1.8;
+}
+footer h4{
+font-family:'Cormorant Garamond',serif;
+font-size:2rem;
+font-weight:700;
+}
+@media(max-width:768px){
+
+.hero h1{
+font-size:3rem;
+line-height:1.1;
+}
+
+}
+
+
+.brand-title h2{
+    position:relative;
+    display:inline-block;
+}
+
+.brand-title h2::before,
+.brand-title h2::after{
+    content:"";
+    position:absolute;
+    top:50%;
+    width:80px;
+    height:1px;
+    background:#ddd;
+}
+
+.brand-title h2::before{
+    right:105%;
+}
+
+.brand-title h2::after{
+    left:105%;
+}
